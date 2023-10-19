@@ -1,0 +1,85 @@
+h1,
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #e7ae5e;
+}
+
+h2 {
+  margin-left: 0;
+  margin-top: 33px;
+}
+
+h1 {
+  margin-bottom: 28px;
+}
+
+#contacts {
+  color: #e7ae5e;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+
+input {
+  padding: 6px 12px; 
+  border: 1px solid grey;
+  border-radius: 6px;
+}
+
+input:focus {
+  outline: 1px solid #e7ae5e;
+  border-color: #e7ae5e;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  width: 700px;
+  margin: 40px auto;
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center; 
+  align-items: center;
+  padding: 12px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  border-color: transparent;
+}
+
+#delete-all-btn {
+  background-color: rgb(237, 81, 81);
+}
+
+#delete-all-btn:hover,
+#delete-all-btn:focus {
+  background-color: rgb(216, 50, 50);
+}
+
+#add-btn {
+  background-color: #e6b672;
+}
+
+#add-btn:hover,
+#add-btn:focus {
+  background-color: #e8a03c;
+}
+
+#error-message,
+#message {
+  color: rgb(239, 76, 76);
+  margin-top: 4px;
+}
+
+#message {
+  margin-left: 41px;
+}
