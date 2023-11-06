@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let deleteAllBtn = document.getElementById("delete-all-btn");
   let errorMessage = document.getElementById("error-message");
   let message = document.getElementById("message");
-  let namePattern = /^[A-Za-z\- ]+$/;
+  let namePattern = /^[A-Za-z\- åäö]+$/;
   let phonePattern = /^\d+$/;
 
   //-------valideringsfunktion för att lägga till kontakt-------
