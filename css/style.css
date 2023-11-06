@@ -86,10 +86,17 @@ input:focus {
 
 
 @media screen and (max-width: 700px) {
-  h1,
-  h2 {
+  h1, h2 {
     font-size: 24px; 
-    margin: 10px 0;
+  }
+
+  h1 {
+    margin: 7px 0;
+  } 
+
+  h2 {
+    margin-top: 8px;
+    margin-bottom: 0px;
   }
 
   #wrapper {
@@ -138,12 +145,16 @@ input:focus {
     list-style-type: none;
   }
 
+  li {
+    margin-top: 0;
+  }
+
   #contacts button {
     width: 48%; 
     flex-direction: row; 
-    margin: 3px 0;
-    padding: 2px;
-    
+    justify-content: space-between;
+    margin: 5px 0px;
+
   }
 
   header {
@@ -155,6 +166,7 @@ input:focus {
   section {
     width: 100%;
     margin-left: 110px;
+    margin-top: -6px;
   }
 }
 
