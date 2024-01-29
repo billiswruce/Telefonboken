@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
       errorMessage.style.display = "block";
       return false;
     } else {
-      errorMessage.style.display = "none"; 
+      errorMessage.style.display = "none";
       return true;
     }
   }
@@ -95,11 +95,11 @@ document.addEventListener("DOMContentLoaded", () => {
   function addContact(name, phone) {
     //funktion som skapar namnruta, telefonruta, ändraknapp, raderaknapp
     let contactList = document.createElement("li"); //skapar kontaktlistan
-
+    contactList.style.listStyleType = "none";
     //-------namnruta-------
     let newNameInput = document.createElement("input");
     newNameInput.type = "text";
-    newNameInput.value = name; 
+    newNameInput.value = name;
     newNameInput.placeholder = "Namn";
     newNameInput.disabled = true;
     contactList.appendChild(newNameInput); //lägger till namnrutan i listan
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //-------telefonruta--------
     let newPhoneInput = document.createElement("input");
     newPhoneInput.type = "text";
-    newPhoneInput.value = phone; 
+    newPhoneInput.value = phone;
     newPhoneInput.placeholder = "Telefonnummer";
     newPhoneInput.disabled = true;
     contactList.appendChild(newPhoneInput); //lägger till telefonrutan i listan
@@ -116,6 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let editBtn = document.createElement("button");
     editBtn.innerHTML = "Ändra";
     editBtn.style.cursor = "pointer";
+    editBtn.classList.add("edit-btn");
     editBtn.addEventListener("click", () => {
       editSaveMode(newNameInput, newPhoneInput, editBtn);
     });
@@ -125,6 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let deleteBtn = document.createElement("button");
     deleteBtn.innerHTML = "Radera";
     deleteBtn.style.cursor = "pointer";
+    deleteBtn.classList.add("delete-btn");
     deleteBtn.addEventListener("click", () => {
       deleteContact(contactList);
     });
