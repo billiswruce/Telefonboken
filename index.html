@@ -1,48 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Telefonboken</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/88726686a1.js" crossorigin="anonymous"></script>
-<body>
-    <div id ="wrapper">
-        <header>
-            <h1>
-                <i class="fa-solid fa-address-book" style="color: #e7ae5e;"></i>
-                Telefonbok
-            </h1>
-            <form id="new-contact">
-                <input type="text"  id="name-input" name="name" placeholder="Namn">
-                <input type="text" inputmode="numeric" id="phone-input" name="phone" placeholder="Telefonnummer">
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/88726686a1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1>
+          <i class="fa-solid fa-address-book"></i>
+          Telefonbok
+        </h1>
+        <form id="new-contact">
+          <input type="text" id="name-input" name="name" placeholder="Namn" />
+          <input
+            type="text"
+            inputmode="numeric"
+            id="phone-input"
+            name="phone"
+            placeholder="Telefonnummer"
+          />
 
-                <div class="btn-row">
-                <button id="add-btn" href="#" class="button">
-                    <i class="fa-solid fa-user-plus" style="color: #ffffff;"></i>
-                </button>
+          <div class="btn-row">
+            <button id="add-btn" href="#" class="button">
+              <i class="fa-solid fa-user-plus" style="color: #ffffff"></i>
+            </button>
 
-                <button id="delete-all-btn" class="button">
-                    <i class="fa-solid fa-trash-can" style="color: #ffffff;"></i>
-                </button>
-                </div>
-            </form>
+            <button id="delete-all-btn" class="button">
+              <i class="fa-solid fa-trash-can" style="color: #ffffff"></i>
+            </button>
+          </div>
+        </form>
 
-            <div id="error-message" class="error-message" style="display: none;">
-                <!--meddelande läggs till via js-->
-            </div>
-            <h2>Kontaktlista</h2>
-        </header>
-        <section>
-            <div id="message" style="display: none;">
-                <!--meddelande läggs till via js-->
-            </div>
-            
-            <ul id="contacts">
-                <!-- kontakter läggs till via js -->
-            </ul>
-        </section>
+        <div id="error-message" class="error-message" style="display: none">
+          <!--meddelande läggs till via js-->
+        </div>
+        <h2>Kontaktlista</h2>
+      </header>
+      <section>
+        <div id="message" style="display: none">
+          <!--meddelande läggs till via js-->
+        </div>
+
+        <ul id="contacts">
+          <!-- kontakter läggs till via js -->
+        </ul>
+      </section>
     </div>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

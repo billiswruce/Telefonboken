@@ -20,18 +20,19 @@ h1 {
 form {
   display: flex;
   flex-direction: row;
-  gap: 3px;
+  gap: 13px;
 }
 
 input {
-  padding: 6px 12px; 
-  border: 1px solid grey;
+  padding: 6px 12px;
+  border: 1px solid rgb(216, 216, 216);
   border-radius: 6px;
+  list-style-type: none;
+  outline: 1px solid #dcc9ae;
 }
 
-input:focus {
-  outline: 1px solid #e7ae5e;
-  border-color: #e7ae5e;
+body {
+  background-color: #fbf8f3;
 }
 
 #wrapper {
@@ -39,14 +40,25 @@ input:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px;
-  width: 700px;
-  margin: 40px auto;
+  padding: 60px;
+  width: 480px;
+  margin: 60px auto;
+  background-color: #f1e7d8;
+  border-radius: 10px;
+  border: #e9d8c0 4px solid;
+}
+
+.delete-btn,
+.edit-btn {
+  background-color: #e6b672;
+  color: #fff;
+  border-color: transparent;
+  border-radius: 6px;
 }
 
 .button {
   display: inline-flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   padding: 12px 12px;
   border-radius: 6px;
@@ -58,6 +70,7 @@ input:focus {
 
 #delete-all-btn {
   background-color: rgb(237, 81, 81);
+  margin-left: 5px;
 }
 
 #delete-all-btn:hover,
@@ -84,15 +97,30 @@ input:focus {
   margin-left: 41px;
 }
 
+#contacts li {
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+#contacts li input {
+  margin-right: 12px; /* Justera mellanrummet mellan namn och nummer */
+}
+
+#contacts li button {
+  margin-left: 12px; /* Justera mellanrummet mellan nummer och knappar */
+}
 
 @media screen and (max-width: 700px) {
-  h1, h2 {
-    font-size: 24px; 
+  h1,
+  h2 {
+    font-size: 24px;
   }
 
   h1 {
     margin: 7px 0;
-  } 
+  }
 
   h2 {
     margin-top: 8px;
@@ -100,9 +128,9 @@ input:focus {
   }
 
   #wrapper {
-    padding: 0px; 
-    width: 100%; 
-    margin: 20px 0; 
+    padding: 10px;
+    width: 80%;
+    margin: 20px 0;
   }
 
   form {
@@ -110,68 +138,36 @@ input:focus {
   }
 
   input {
-    width: 100%; 
+    width: 80%;
     margin-top: 8px;
-    margin-bottom: 10px; 
-  }
-
-  #btn-row {
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: 10px;
   }
 
   .button {
-    width: 25%; 
+    width: 25%; /* Ändra bredden för knappar så att de täcker hela bredden */
     margin: 8px 0;
   }
 
   #message {
-    margin-left: 0; 
+    margin-left: 0;
   }
 
   #contacts {
-    color: #e7ae5e;
+    width: 80%; /* Ändra bredden för kontakter så att de täcker hela bredden */
   }
 
-  #contacts {
+  #contacts li {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 40%;
-    list-style-type: none;
+    margin-left: -20px;
   }
 
-  li {
-    margin-top: 0;
-  }
-
-  #contacts button {
-    width: 48%; 
-    flex-direction: row; 
-    justify-content: space-between;
-    margin: 5px 0px;
-
-  }
-
-  header {
-    width: 50%;
-    margin-left: 0;
-
-  }
-
-  section {
-    width: 100%;
-    margin-left: 110px;
-    margin-top: -6px;
+  #contacts li button {
+    width: 80%;
+    margin-top: 10px;
+    margin-left: -14px;
   }
 }
-
-
-
-
-
-
